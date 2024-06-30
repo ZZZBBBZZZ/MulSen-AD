@@ -24,3 +24,24 @@ After download, put the dataset in `dataset` folder.
 To download the pre-trained PointMAE model using [this link](https://drive.google.com/file/d/1-wlRIz0GM8o6BuPTJz4kTt6c_z1Gh6LX/view?usp=sharing). 
 
 After download, put the dataset in `checkpoints` folder.
+
+
+## Data preparation
+- Download MulSen_AD.rar and extract into `./dataset`
+```
+MulSen_AD
+├── ashtray0
+    ├── train
+        ├── *template.pcd
+        ...
+    ├── test
+        ├── 1_bulge.pcd
+        ├── 2_concavity.pcd
+        ...
+    ├── GT
+        ├── 1_bulge.txt
+        ├── 2_sink.txt
+        ... 
+├── bag0
+...
+```
