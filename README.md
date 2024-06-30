@@ -89,7 +89,7 @@ MulSen_AD
         ├── train
         ├── test
         ├── GT
-    ├── Pointcloud                      ---Point Cloud
+    ├── Pointcloud                      ---Point Clouds
         ├── train
         ├── test
         ├── GT
