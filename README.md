@@ -5,8 +5,9 @@
 
 ## Introduction
 > In this project, we propose the first Multi-Sensor Anomaly Detection (Mulsen-AD) dataset and develop a comprehensive benchmark (Mulsen-AD Bench) on Mulsen-AD dataset. Specifically,  we build Mulsen-AD dataset with high-resolution industrial camera, high-precision laser scanner and lock-in infrared thermography. To exactly replicate real industrial scenarios, Mulsen-AD dataset is comprised of 15 types of distinct and authentic industrial products, featuring a variety of defects that require detection through the integration of multiple sensors. 
-![piplien](./img/figure1_min.png)
 
+![piplien](./img/figure1_min.png)
+(a) Existing single-sensor object-level anomaly detection; (b) Our introduced multi-sensor object-level anomaly detection setting.
 
 
 ## Download
