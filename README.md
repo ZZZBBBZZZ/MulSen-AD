@@ -56,27 +56,26 @@ After download, put the dataset in `checkpoints` folder.
 - Download MulSen_AD.rar and extract into `./dataset/MulSen_AD`
 ```
 MulSen_AD
-├── capsule
-    ├── RGB
-        ├── train
+├── capsule                              ---Object class folder.
+    ├── RGB                              ---RGB images
+        ├── train                        ---A training set of RGB images
             ├── 0.png
-            ├── 1.png
             ...
-        ├── test
+        ├── test                         ---A test set of RGB images
+            ├── hole                     ---Types of anomalies, such as hole. 
+                ├── 0.png
+                ...
+            ├── crack                    ---Types of anomalies, such as crack.
+                ├── 0.png
+                ...
+            ├── good                     ---RGB images without anomalies.
+                ├── 0.png
+                ...
+            ...
+        ├── GT                           ---GT segmentation mask for various kinds of anomalies.
             ├── hole
                 ├── 0.png
-                ...
-            ├── crack
-                ├── 0.png
-                ...
-            ├── good
-                ├── 0.png
-                ...
-            ...
-        ├── GT
-            ├── hole
-                ├── 0.png
-                ├── data.csv
+                ├── data.csv             ---Label information
                 ...
             ├── crack
                 ├── 0.png
@@ -86,7 +85,7 @@ MulSen_AD
                 ├── data.csv
             ...
         ...
-    ├── Infrared
+    ├── Infrared                  
         ...
     ├── Pointcloud
         ... 
@@ -96,7 +95,14 @@ MulSen_AD
 ```
 
 ## Train and Test
-Train and test with the following command, including single-sensor, dual-sensor, and triple-sensor configurations:
+Train and test with the following command, including single-sensor,  double-sensor, and triple-sensor configurations:
 ```
 $ sh start.sh
-```  
+```
+
+## Thanks
+
+Our code is built on [Real3D-AD](https://github.com/eliahuhorwitz/3D-ADS) and [M3DM](https://github.com/nomewang/M3DM), thanks for their excellent works!
+
+## License
+The dataset is released under the CC BY 4.0 license.
