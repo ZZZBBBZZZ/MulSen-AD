@@ -95,4 +95,7 @@ MulSen_AD
 ...
 ```
 
-
+## Train and Test
+```
+$ sh start.sh
+```  
