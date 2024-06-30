@@ -27,21 +27,47 @@ After download, put the dataset in `checkpoints` folder.
 
 
 ## Data preparation
-- Download MulSen_AD.rar and extract into `./dataset`
+- Download MulSen_AD.rar and extract into `./dataset/MulSen_AD`
 ```
 MulSen_AD
-├── ashtray0
-    ├── train
-        ├── *template.pcd
+├── capsule
+    ├── RGB
+        ├── train
+            ├── 0.png
+            ├── 1.png
+            ...
+        ├── test
+            ├── hole
+                ├── 0.png
+                ...
+            ├── crack
+                ├── 0.png
+                ...
+            ├── good
+                ├── 0.png
+                ...
+            ...
+        ├── GT
+            ├── hole
+                ├── 0.png
+                ├── data.csv
+                ...
+            ├── crack
+                ├── 0.png
+                ├── data.csv
+                ...
+            ├── good
+                ├── data.csv
+            ...
         ...
-    ├── test
+    ├── Infrared
         ├── 1_bulge.pcd
         ├── 2_concavity.pcd
         ...
-    ├── GT
+    ├── Pointcloud
         ├── 1_bulge.txt
         ├── 2_sink.txt
         ... 
-├── bag0
+├── cotton
 ...
 ```
