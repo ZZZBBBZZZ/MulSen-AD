@@ -66,7 +66,7 @@ if __name__ == '__main__':
                         help='Point groups number of Point Transformer.')
     parser.add_argument('--random_state', default=None, type=int,
                         help='random_state for random project')
-    parser.add_argument('--dataset_path', default='/home/dataset/liwq/datasets/mulsen_datasets', type=str, 
+    parser.add_argument('--dataset_path', default='./dataset', type=str, 
                         help='Dataset store path')
     parser.add_argument('--img_size', default=224, type=int,
                         help='Images size for model')
