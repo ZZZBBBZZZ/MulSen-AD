@@ -11,7 +11,37 @@
 
 ## Download
 
-To download the MulSen-AD dataset, click [MulSen_AD.rar(google drive)](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) or [MulSen_AD.rar(huggingface)](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main).
+### Dataset
+
+To download the `MulSen-AD` dataset, click [MulSen_AD.rar(google drive)](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) or [MulSen_AD.rar(huggingface)](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main).
 
 The dataset can be quickly reviewed on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
+After download, put the dataset in `dataset` folder.
+
+### Checkpoint
+
+To download the pre-trained PointMAE model using [this link](https://drive.google.com/file/d/1-wlRIz0GM8o6BuPTJz4kTt6c_z1Gh6LX/view?usp=sharing). 
+
+After download, put the dataset in `checkpoints` folder.
+
+
+## Data preparation
+- Download MulSen_AD.rar and extract into `./dataset`
+```
+MulSen_AD
+├── ashtray0
+    ├── train
+        ├── *template.pcd
+        ...
+    ├── test
+        ├── 1_bulge.pcd
+        ├── 2_concavity.pcd
+        ...
+    ├── GT
+        ├── 1_bulge.txt
+        ├── 2_sink.txt
+        ... 
+├── bag0
+...
+```
