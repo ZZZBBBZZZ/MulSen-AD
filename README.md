@@ -100,7 +100,7 @@ MulSen_AD
 ```
 
 ## Train and Test
-Train and test with the following command, including single-sensor,  double-sensor, and triple-sensor configurations:
+Train and test with the following command:
 ```
 $ sh start.sh
 ```
