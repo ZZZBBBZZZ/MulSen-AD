@@ -90,7 +90,7 @@ MulSen_AD
 To run experiments, first clone the repository and install `requirements.txt`.
 
 ```
-$ git clone https://github.com/cnulab/RealNet.git
-$ cd RealNet
+$ git clone https://github.com/ZZZBBBZZZ/MulSen-AD.git
+$ cd MulSen-AD
 $ pip install -r requirements.txt
 ```  
