@@ -49,7 +49,7 @@ After download, put the dataset in `dataset` folder.
 
 To download the pre-trained PointMAE model using [this link](https://drive.google.com/file/d/1-wlRIz0GM8o6BuPTJz4kTt6c_z1Gh6LX/view?usp=sharing). 
 
-After download, put the dataset in `checkpoints` folder.
+After download, put the checkpoint file in `checkpoints` folder.
 
 
 ## Data preparation
