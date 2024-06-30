@@ -85,11 +85,15 @@ MulSen_AD
                 ├── data.csv
             ...
         ...
-    ├── Infrared                  
-        ...
-    ├── Pointcloud
-        ... 
-├── cotton
+    ├── Infrared                        ---Infrared images
+        ├── train
+        ├── test
+        ├── GT
+    ├── Pointcloud                      ---Point Cloud
+        ├── train
+        ├── test
+        ├── GT
+├── cotton                             ---Object class folder.                      
     ... 
 ...
 ```
