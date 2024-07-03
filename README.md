@@ -23,11 +23,11 @@ The main contributions are summarized as follows:
 MulSen-AD includes **RGB images** acquired by cameras, **infrared images**(gray-scale images) by lock-in infrared thermography and **high-resolution 3D point clouds** by laser scanners.
 ![piplien](./img/figure1_min.png)
 
-### 2.1 Meet our 15 categories
+### 2.2 Meet our 15 categories
 We selected 15 objects made by different materials, including metal, plastic, fiber, rubber, semiconductor and composite materials, with different shapes, sizes and colors.
 ![piplien](./img/figure1_min.png)
 
-### 2.1 Anomaly types and samples
+### 2.3 Anomaly types and samples
 we manually created 14 types of anomalies, including cracks, holes, squeeze, external and internal broken, creases, scratches, foreign bodies, label, bent, color, open, substandard, and internal detachments. The anomalies are designed to closely resemble real industrial situations, with a wide distribution of types, including surface, internal, and 3D geometric anomalies. 
 
 Capsule：
@@ -44,27 +44,7 @@ Cotton：
 
 *More samples can be found on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
-
-
-
-## Download
-
-### Dataset
-
-To download the `MulSen-AD` dataset, click [MulSen_AD.rar(google drive)](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) or [MulSen_AD.rar(huggingface)](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main).
-
-The dataset can be quickly reviewed on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
-
-After download, put the dataset in `dataset` folder.
-
-### Checkpoint
-
-To download the pre-trained PointMAE model using [this link](https://drive.google.com/file/d/1-wlRIz0GM8o6BuPTJz4kTt6c_z1Gh6LX/view?usp=sharing). 
-
-After download, put the checkpoint file in `checkpoints` folder.
-
-
-## Data preparation
+### 2.4 Data Directory
 - Download MulSen_AD.rar and extract into `./dataset/MulSen_AD`
 ```
 MulSen_AD
@@ -109,6 +89,26 @@ MulSen_AD
     ... 
 ...
 ```
+
+
+## Download
+
+### Dataset
+
+To download the `MulSen-AD` dataset, click [MulSen_AD.rar(google drive)](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) or [MulSen_AD.rar(huggingface)](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main).
+
+The dataset can be quickly reviewed on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
+
+After download, put the dataset in `dataset` folder.
+
+### Checkpoint
+
+To download the pre-trained PointMAE model using [this link](https://drive.google.com/file/d/1-wlRIz0GM8o6BuPTJz4kTt6c_z1Gh6LX/view?usp=sharing). 
+
+After download, put the checkpoint file in `checkpoints` folder.
+
+
+
 ## Setup
 To run experiments, first clone the repository and install `requirements.txt`.
 
