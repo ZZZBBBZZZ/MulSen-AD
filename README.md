@@ -214,7 +214,7 @@ $ sh start.sh
 ```
 
 ## 6 Dataset Class Required for Single-3D Anomaly Detection
-In the MulSen-AD setting, an object is marked as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) has a label indicating an anomaly. However, in the Single-3D AD setting, an object is marked as abnormal only if the point cloud specifically has a label indicating an anomaly.  
+In the MulSen-AD setting, an object is labeled as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) is labeled as abnormal. However, in the Single-3D AD setting, an object is labeled as abnormal only if the point cloud specifically is labeled as abnormal.   
 ### 6.1 
 
 
