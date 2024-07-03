@@ -27,14 +27,7 @@ Cotton：
 More samples can be found on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
 
-## Setup
-To run experiments, first clone the repository and install `requirements.txt`.
 
-```
-$ git clone https://github.com/ZZZBBBZZZ/MulSen-AD.git
-$ cd MulSen-AD
-$ pip install -r requirements.txt
-```  
 
 ## Download
 
@@ -98,6 +91,15 @@ MulSen_AD
     ... 
 ...
 ```
+## Setup
+To run experiments, first clone the repository and install `requirements.txt`.
+
+```
+$ git clone https://github.com/ZZZBBBZZZ/MulSen-AD.git
+$ cd MulSen-AD
+$ pip install -r requirements.txt
+```  
+
 
 ## Train and Test
 Train and test with the following command:
