@@ -17,7 +17,7 @@ The main contributions are summarized as follows:
 -  We proposed **Mulsen-TripleAD**, a decision fusion gating method for multi-sensor anomaly detection. Utilizing data from three types of sensors and combining multiple memory banks with a decision gating unit, *Mulsen-TripleAD* outperforms setups using fewer sensors and sets a new baseline for our multi-sensor anomaly detection task.
 
 
-## 2.Mulsen AD dataset
+## 2. Mulsen AD dataset
 
 ### 2.1 Collection pipeline
 MulSen-AD includes **RGB images** acquired by cameras, **infrared images**(gray-scale images) by lock-in infrared thermography and **high-resolution 3D point clouds** by laser scanners.
@@ -45,7 +45,7 @@ Cotton：
 *More samples can be found on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
 ### 2.4 Data Directory
-- Download MulSen_AD.rar and extract into `./dataset/MulSen_AD`
+- Download [MulSen_AD.rar](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) and extract into `./dataset/MulSen_AD`
 ```
 MulSen_AD
 ├── capsule                              ---Object class folder.
@@ -90,10 +90,18 @@ MulSen_AD
 ...
 ```
 
+## 3. Benchmark
+### 3.1 MulsenAD Bench on Mulsen AD dataset. The score indicates object-level AUROC $\uparrow$. PC means Point cloud. The best result of each category is highlighted in bold.
 
-## Download
 
-### Dataset
+
+### 3.2 SingeBench-3D for MulSen-AD dataset. The score indicates point-level AUROC $\uparrow$. The best result of each category is highlighted in bold.
+
+
+
+## 4. Download
+
+### 4.1 Dataset
 
 To download the `MulSen-AD` dataset, click [MulSen_AD.rar(google drive)](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) or [MulSen_AD.rar(huggingface)](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main).
 
@@ -101,7 +109,7 @@ The dataset can be quickly reviewed on the [website](https://zzzbbbzzz.github.io
 
 After download, put the dataset in `dataset` folder.
 
-### Checkpoint
+### 4.2 Checkpoint
 
 To download the pre-trained PointMAE model using [this link](https://drive.google.com/file/d/1-wlRIz0GM8o6BuPTJz4kTt6c_z1Gh6LX/view?usp=sharing). 
 
@@ -109,7 +117,10 @@ After download, put the checkpoint file in `checkpoints` folder.
 
 
 
-## Setup
+
+## Getting Started
+
+### 
 To run experiments, first clone the repository and install `requirements.txt`.
 
 ```
