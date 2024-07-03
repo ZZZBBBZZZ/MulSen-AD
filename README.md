@@ -11,13 +11,18 @@
 - (b) is our introduced multi-sensor object-level anomaly detection setting.
 
 The main contributions are summarized as follows:
--  We introduced Multi-Sensor Anomaly Detection (Mulsen-AD) setting, a practical and challenging setting for object level anomaly detection based on three different industrial sensors, solving the limitations of single sensor anomaly detection, and bridged the gap between industrial and research in object anomaly detection.
--  We developed Mulsen-AD dataset, the first real dataset for evaluating multi-sensor anomaly detection, featuring diverse, high-quality object data captured by high-resolution devices and anomalies based on actual factory conditions.
+-  We introduced Multi-Sensor Anomaly Detection (**Mulsen-AD**) setting, a practical and challenging setting for object level anomaly detection based on three different industrial sensors, solving the limitations of single sensor anomaly detection, and bridged the gap between industrial and research in object anomaly detection.
+-  We developed **Mulsen-AD** dataset, the first real dataset for evaluating multi-sensor anomaly detection, featuring diverse, high-quality object data captured by high-resolution devices and anomalies based on actual factory conditions.
 -  We conducted a comprehensive benchmark using the Mulsen-AD dataset and provided a universal toolkit to facilitate further exploration and reproduction of the benchmark.
--  We proposed Mulsen-TripleAD, a decision fusion gating method for multi-sensor anomaly detection. Utilizing data from three types of sensors and combining multiple memory banks with a decision gating unit, Mulsen-TripleAD outperforms setups using fewer sensors and sets a new baseline for our multi-sensor anomaly detection task.
+-  We proposed **Mulsen-TripleAD**, a decision fusion gating method for multi-sensor anomaly detection. Utilizing data from three types of sensors and combining multiple memory banks with a decision gating unit, *Mulsen-TripleAD* outperforms setups using fewer sensors and sets a new baseline for our multi-sensor anomaly detection task.
 
 
-## Samples in Mulsen AD dataset
+## 2.Mulsen AD dataset
+
+### 2.1 Meet our 15 categories
+![piplien](./img/figure1_min.png)
+
+### 2.1 Anomaly types and samples
 Capsule：
 
 ![Capsule](./img/capsule.PNG)
@@ -30,7 +35,7 @@ Cotton：
 
 ![Light](./img/cotton.PNG)
 
-More samples can be found on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
+*More samples can be found on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
 
 
