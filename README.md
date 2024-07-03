@@ -187,7 +187,7 @@ conda create -n MulSen_AD python=3.8
 conda activate MulSen_AD
 ```
 
-
+Clone the repository and install dependencies:
 ```
 $ git clone https://github.com/ZZZBBBZZZ/MulSen-AD.git
 $ cd MulSen-AD
@@ -196,6 +196,15 @@ $ pip install -r requirements.txt
 
 
 ## Train and Test
+Firstly, please ensure that the dataset and checkpoints have been downloaded and placed in the corresponding folders. The file format is like this:
+```
+checkpoints
+ └ pointmae_pretrain.pth
+data
+ └ model
+```
+
+
 Train and test with the following command:
 ```
 $ sh start.sh
