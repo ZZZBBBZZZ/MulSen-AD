@@ -21,10 +21,12 @@ The main contributions are summarized as follows:
 
 ### 2.1 Collection pipeline
 MulSen-AD includes **RGB images** acquired by cameras, **infrared images**(gray-scale images) by lock-in infrared thermography and **high-resolution 3D point clouds** by laser scanners.
+
 ![piplien](./img/figure1_min.png)
 
 ### 2.2 Meet our 15 categories
 We selected 15 objects made by different materials, including metal, plastic, fiber, rubber, semiconductor and composite materials, with different shapes, sizes and colors.
+
 ![piplien](./img/figure1_min.png)
 
 ### 2.3 Anomaly types and samples
@@ -177,7 +179,7 @@ After download, put the checkpoint file in `checkpoints` folder.
 
 
 
-## 5. Getting Started
+## 5. Getting Started in the MulSen-AD Setup
 
 
 ### 5.1 Installation
@@ -195,13 +197,14 @@ $ pip install -r requirements.txt
 ```  
 
 
-## Train and Test
+### 5.2 Train and Test
 Firstly, please ensure that the dataset and checkpoints have been downloaded and placed in the corresponding folders. The file format is like this:
 ```
 checkpoints
  └ pointmae_pretrain.pth
-data
- └ model
+dataset
+ └ MulSen_AD
+    └...
 ```
 
 
@@ -209,6 +212,12 @@ Train and test with the following command:
 ```
 $ sh start.sh
 ```
+
+## 6 Dataset Class Required for Single-3D Anomaly Detection
+In the MulSen-AD setting, an object is marked as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) has a label indicating an anomaly. However, in the Single-3D AD setting, an object is marked as abnormal only if the point cloud specifically has a label indicating an anomaly.  
+### 6.1 
+
+
 
 ## Thanks
 
