@@ -19,10 +19,17 @@ The main contributions are summarized as follows:
 
 ## 2.Mulsen AD dataset
 
+### 2.1 Collection pipeline
+MulSen-AD includes **RGB images** acquired by cameras, **infrared images**(gray-scale images) by lock-in infrared thermography and **high-resolution 3D point clouds** by laser scanners.
+![piplien](./img/figure1_min.png)
+
 ### 2.1 Meet our 15 categories
+We selected 15 objects made by different materials, including metal, plastic, fiber, rubber, semiconductor and composite materials, with different shapes, sizes and colors.
 ![piplien](./img/figure1_min.png)
 
 ### 2.1 Anomaly types and samples
+we manually created 14 types of anomalies, including cracks, holes, squeeze, external and internal broken, creases, scratches, foreign bodies, label, bent, color, open, substandard, and internal detachments. The anomalies are designed to closely resemble real industrial situations, with a wide distribution of types, including surface, internal, and 3D geometric anomalies. 
+
 Capsule：
 
 ![Capsule](./img/capsule.PNG)
