@@ -216,7 +216,33 @@ $ sh start.sh
 ## 6 Dataset Class Required for Single-3D Anomaly Detection
 In the MulSen-AD setting, an object is labeled as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) is labeled as abnormal. However, in the Single-3D AD setting, an object is labeled as abnormal only if the point cloud specifically is labeled as abnormal.   
 ### 6.1 
+```
+class DatasetMulSen_ad_train(Dataset):
+    def __init__(self, dataset_dir, cls_name, num_points, if_norm=True, if_cut=False):
+        self.num_points = num_points
+        self.dataset_dir = dataset_dir
+        self.train_sample_list = glob.glob(os.path.join(self.dataset_dir,cls_name, 'Pointcloud', 'train') + "/*.stl")
+        self.if_norm = if_norm
 
+    def norm_pcd(self, point_cloud):
+        center = np.average(point_cloud,axis=0)
+        new_points = point_cloud-np.expand_dims(center,axis=0)
+        return new_points
+
+    def __getitem__(self, idx):
+        mesh_stl = o3d.geometry.TriangleMesh()
+        mesh_stl = o3d.io.read_triangle_mesh(self.train_sample_list[idx])
+        mesh_stl = mesh_stl.remove_duplicated_vertices()
+        pc = np.asarray(mesh_stl.vertices)
+        N = pc.shape[0]
+        pointcloud = self.norm_pcd(pc)
+        mask = np.zeros((pointcloud.shape[0]))
+        label = 0
+        return (1,pointcloud,1), mask, label, self.train_sample_list[idx]
+
+    def __len__(self):
+       return len(self.train_sample_list)
+```
 
 
 ## Thanks
