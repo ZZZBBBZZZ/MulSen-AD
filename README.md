@@ -34,11 +34,11 @@ we manually created 14 types of anomalies, including cracks, holes, squeeze, ext
 
 Capsule：
 
-![Capsule](./img/capsule.PNG)
+![Capsule](./img/capsule1.PNG)
 
 Light：
 
-![Light](./img/light.PNG)
+![Light](./img/light1.PNG)
 
 Cotton：
 
