@@ -213,11 +213,14 @@ Train and test with the following command:
 $ sh start.sh
 ```
 
-## 6 Dataset Class Required for Single-3D Anomaly Detection
-In the MulSen-AD setting, an object is labeled as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) is labeled as abnormal. However, in the Single-3D AD setting, an object is labeled as abnormal only if the point cloud specifically is labeled as abnormal.   
+## 6 To use our dataset for 3D Anomaly Detection
+Our Mulsen-AD dataset contains a high quality 3D dataset, solving the problem of small training set and small distribution of the previous dataset（Real3d and Anomaly Shapenet). We also encourage to just use our dataset for 3D anomaly detection.
+In the MulSen-AD setting, an object is labeled as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) is labeled as abnormal. However, in the 3D AD setting, an object is labeled as abnormal only if the point cloud specifically is labeled as abnormal. (You could refer to the csv label file in our dataset). 
+For convenience, you can directly download our dataset and the following class code for 3D anomaly detection
+
 ### 6.1 Dataset Class for Training
 ```
-class DatasetMulSen_ad_train(Dataset):
+class DatasetMulSen_3dad_train(Dataset):
     def __init__(self, dataset_dir, cls_name, num_points, if_norm=True, if_cut=False):
         self.num_points = num_points
         self.dataset_dir = dataset_dir
@@ -245,7 +248,7 @@ class DatasetMulSen_ad_train(Dataset):
 ```
 ### 6.1 Dataset Class for Testing
 ```
-class DatasetMulSen_ad_test(Dataset):
+class DatasetMulSen_3dad_test(Dataset):
     def __init__(self, dataset_dir, cls_name, num_points, if_norm=True, if_cut=False):
         self.num_points = num_points
         self.dataset_dir = dataset_dir
