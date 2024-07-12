@@ -215,8 +215,10 @@ $ sh start.sh
 
 ## 6 To use our dataset for 3D Anomaly Detection
 Our Mulsen-AD dataset contains a high quality 3D dataset, solving the problem of small training set and small distribution of the previous dataset（Real3d and Anomaly Shapenet). We also encourage to just use our dataset for 3D anomaly detection.
+
 In the MulSen-AD setting, an object is labeled as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) is labeled as abnormal. However, in the 3D AD setting, an object is labeled as abnormal only if the point cloud specifically is labeled as abnormal. (You could refer to the csv label file in our dataset). 
-For convenience, you can directly download our dataset and the following class code for 3D anomaly detection
+
+For convenience, you can directly download our dataset and the following class code for 3D anomaly detection.The benchmark is listed in sec3.2(SingeBench-3D for MulSen-AD dataset) above.
 
 ### 6.1 Dataset Class for Training
 ```
