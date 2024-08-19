@@ -47,7 +47,7 @@ Cotton：
 *More samples can be found on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
 ### 2.4 Data Directory
-- Download [MulSen_AD.rar](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) and extract into `./dataset/MulSen_AD`
+- Download [MulSen_AD.rar] and extract into `./dataset/MulSen_AD`
 ```
 MulSen_AD
 ├── capsule                              ---Object class folder.
@@ -164,7 +164,6 @@ The score indicates point-level AUROC ↑. The best result of each category is h
 
 ### 4.1 Dataset
 
-To download the `MulSen-AD` dataset, click [MulSen_AD.rar(google drive)](https://drive.google.com/file/d/16peKMQ6KYnPK7v-3rFZB3aIHWdqNtQc5/view?usp=drive_link) or [MulSen_AD.rar(huggingface)](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main).
 
 The dataset can be quickly reviewed on the [website](https://zzzbbbzzz.github.io/MulSen_AD/index.html).
 
