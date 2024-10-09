@@ -1,8 +1,4 @@
-"""
-Code based on the official M3DM code found at
-https://github.com/nomewang/M3DM
 
-"""
 import argparse
 from runner import Tester
 from dataset import mulsen_classes
