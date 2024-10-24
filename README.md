@@ -1,4 +1,4 @@
-# MulSen-AD: A Dataset and Benchmark for Multi-Sensor Anomaly Detection
+# Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties
 ## [[Project Page](https://zzzbbbzzz.github.io/MulSen_AD/index.html)]
 
 
