@@ -1,5 +1,5 @@
 # Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties
-## [[Project Page](https://zzzbbbzzz.github.io/MulSen_AD/index.html)]  [[Arxiv](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Arxiv](https://zzzbbbzzz.github.io/MulSen_AD/index.html)]
+## [[Project Page](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] <!-- [[Arxiv](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Dataset](https://zzzbbbzzz.github.io/MulSen_AD/index.html)]-->
 
 ## 1.Abstract
 >Object anomaly detection is essential for industrial quality inspection, yet traditional single-sensor methods face critical limitations. They fail to capture the wide range of anomaly types, as single sensors are often constrained to either external appearance, geometric structure, or internal properties. To overcome these challenges, we introduce **MulSen-AD**, the first high-resolution, multi-sensor anomaly detection dataset tailored for industrial applications. MulSen-AD unifies data from RGB cameras, laser scanners, and lock-in infrared thermography, effectively capturing external appearance, geometric deformations, and internal defects. The dataset spans 15 industrial products with diverse, real-world anomalies. We also present MulSen-AD Bench, a benchmark designed to evaluate multi-sensor methods, and propose MulSen-TripleAD, a decision-level fusion algorithm that integrates these three modalities for robust, unsupervised object anomaly detection. Our experiments demonstrate that multi-sensor fusion substantially outperforms single-sensor approaches, achieving 96.1\% AUROC in object-level detection accuracy. These results highlight the importance of integrating multi-sensor data for comprehensive industrial anomaly detection. 
@@ -183,7 +183,7 @@ class DatasetMulSen_3dad_train(Dataset):
     def __len__(self):
        return len(self.train_sample_list)
 ```
-### 5.1 Dataset Class for Testing
+### 5.2 Dataset Class for Testing
 ```
 class DatasetMulSen_3dad_test(Dataset):
     def __init__(self, dataset_dir, cls_name, num_points, if_norm=True, if_cut=False):
