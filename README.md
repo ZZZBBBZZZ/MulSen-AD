@@ -148,7 +148,7 @@ For convenience, you can directly download our dataset along with the following 
 
 ## Thanks
 
-Our code is built on [Real3D-AD](https://github.com/eliahuhorwitz/3D-ADS) and [M3DM](https://github.com/nomewang/M3DM), thanks for their excellent works!
+Our code is built on [PatchCore](https://github.com/amazon-science/patchcore-inspection), [Real3D-AD](https://github.com/eliahuhorwitz/3D-ADS) and [M3DM](https://github.com/nomewang/M3DM), thanks for their excellent works!
 
 ## License
 The dataset is released under the CC BY 4.0 license.
