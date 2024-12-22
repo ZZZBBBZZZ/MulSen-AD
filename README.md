@@ -1,7 +1,18 @@
 # Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties
 ## [[Project Page](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Arxiv](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Dataset](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main)]
 
-
+## Table of Contents
+- [Abstract](#Abstract)
+- [Mulsen-AD Dataset](#Mulsen AD dataset)
+- [Download](#Download)
+  - [Dataset](#Dataset)
+  - [Checkpoint](#Checkpoint)
+- [Getting Started in the MulSen-AD Setup](#Getting Started in the MulSen-AD Setup)
+  - [Installation](#Installation)
+  - [Train and Test](#Train and Test)
+- [Mulsen AD Benchmark](#Mulsen AD Benchmark)
+- [To use our dataset for Single 3D Anomaly Detection](#To use our dataset for Single 3D Anomaly Detection)
+- [Single 3D Benchmark](#Single 3D Benchmark)
 ## 1.Abstract
 >Object anomaly detection is essential for industrial quality inspection, yet traditional single-sensor methods face critical limitations. They fail to capture the wide range of anomaly types, as single sensors are often constrained to either external appearance, geometric structure, or internal properties. To overcome these challenges, we introduce **MulSen-AD**, the first high-resolution, multi-sensor anomaly detection dataset tailored for industrial applications. MulSen-AD unifies data from **RGB cameras, laser scanners, and lock-in infrared thermography**, effectively capturing external appearance, geometric deformations, and internal defects. The dataset spans 15 industrial products with diverse, real-world anomalies. We also present MulSen-AD Bench, a benchmark designed to evaluate multi-sensor methods, and propose MulSen-TripleAD, a decision-level fusion algorithm that integrates these three modalities for robust, unsupervised object anomaly detection. Our experiments demonstrate that multi-sensor fusion substantially outperforms single-sensor approaches, achieving 96.1\% AUROC in object-level detection accuracy. These results highlight the importance of integrating multi-sensor data for comprehensive industrial anomaly detection. 
 
@@ -136,8 +147,8 @@ Train and test with the following command:
 ```
 $ sh start.sh
 ```
-
-## 5 To use our dataset for Single 3D Anomaly Detection
+## 5 Mulsen-AD Benchmark
+## 6 To use our dataset for Single 3D Anomaly Detection
 - Our Mulsen-AD dataset contains a high quality 3D dataset. We also encourage to just use our dataset for 3D anomaly detection.
 
 - **Note:** In the MulSen-AD setting, an object is labeled as abnormal if any one of the three modalities (RGB images, infrared images, or point clouds) is labeled as abnormal. However, in the single 3D AD setting, an object is labeled as abnormal only if the point cloud specifically is labeled as abnormal. (You could refer to the csv label file in our dataset). 
@@ -145,6 +156,7 @@ $ sh start.sh
 For convenience, you can directly download our dataset along with the following class code for 3D anomaly detection. The benchmark details are provided in Section 10 (Single 3D Benchmark) of the supplementary material above.
 
 **Single 3D Train/Test Dataset Class: `./dataset_3D.py`**
+## 7 Single 3D Benchmark
 
 ## Thanks
 
