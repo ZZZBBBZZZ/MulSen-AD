@@ -152,6 +152,7 @@ Train and test with the following command:
 $ sh start.sh
 ```
 ## 5 Mulsen-AD Benchmark
+Due to space limit, detailed Mulsen-AD bench can refer to Tab4&Tab5 in our [[Paper](https://arxiv.org/abs/2412.14592)]
 ## 6 To use our dataset for Single 3D Anomaly Detection
 - Our Mulsen-AD dataset contains a high quality 3D dataset. We also encourage to just use our dataset for 3D anomaly detection.
 
@@ -161,6 +162,7 @@ For convenience, you can directly download our dataset along with the following 
 
 **Single 3D Train/Test Dataset Class: `./dataset_3D.py`**
 ## 7 Single 3D Benchmark
+Due to space limit, detailed Single-3D-AD bench can refer to Tab8&Tab9 in our [[Supplementary](https://arxiv.org/abs/2412.14592)]
 
 ## Thanks
 
