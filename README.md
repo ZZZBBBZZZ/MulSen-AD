@@ -1,5 +1,5 @@
 # Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties
-## [[Project Page](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Arxiv](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Dataset](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main)]
+## [[Project Page](https://zzzbbbzzz.github.io/MulSen_AD/index.html)] [[Arxiv](https://arxiv.org/abs/2412.14592)] [[Dataset](https://huggingface.co/datasets/orgjy314159/MulSen_AD/tree/main)]
 
 ## Table of Contents
 - Abstract
