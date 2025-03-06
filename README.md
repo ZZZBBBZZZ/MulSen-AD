@@ -163,7 +163,10 @@ For convenience, you can directly download our dataset along with the following 
 **Single 3D Train/Test Dataset Class: `./dataset_3D.py`**
 ## 7 Single 3D Benchmark
 Due to space limit, detailed Single-3D-AD bench can refer to Tab8&Tab9 in our [[Supplementary](https://arxiv.org/abs/2412.14592)]
-
+## 8 Single Image/Infrared Benchmark
+Refer to ## 7 Single 3D Benchmark and modify `./dataset_3D.py`**
+## 9 More Sensors
+More sensors like X-Ray and CT are on the road!
 ## Thanks
 
 Our code is built on [PatchCore](https://github.com/amazon-science/patchcore-inspection), [Real3D-AD](https://github.com/eliahuhorwitz/3D-ADS) and [M3DM](https://github.com/nomewang/M3DM), thanks for their excellent works!
