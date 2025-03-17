@@ -173,6 +173,17 @@ More sensors like X-Ray and CT are on the road!
 
 Our code is built on [PatchCore](https://github.com/amazon-science/patchcore-inspection), [Real3D-AD](https://github.com/eliahuhorwitz/3D-ADS) and [M3DM](https://github.com/nomewang/M3DM), thanks for their excellent works!
 
+## Citation
+Please cite the following paper if this work helps your project:
+```bibtex
+@article{li2024multi,
+  title={Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties},
+  author={Li, Wenqiao and Zheng, Bozhong and Xu, Xiaohao and Gan, Jinye and Lu, Fading and Li, Xiang and Ni, Na and Tian, Zheng and Huang, Xiaonan and Gao, Shenghua and others},
+  journal={arXiv preprint arXiv:2412.14592},
+  year={2024}
+}
+```
+
 ## License
 ```
 MIT License
