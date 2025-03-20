@@ -18,7 +18,7 @@
 - To use our dataset for Single 3D Anomaly Detection
 - Single 3D Benchmark
 - Single Image/Infrared Benchmark
-- More sensors
+
 ## 1. Abstract
 >Object anomaly detection is essential for industrial quality inspection, yet traditional single-sensor methods face critical limitations. They fail to capture the wide range of anomaly types, as single sensors are often constrained to either external appearance, geometric structure, or internal properties. To overcome these challenges, we introduce **MulSen-AD**, the first high-resolution, multi-sensor anomaly detection dataset tailored for industrial applications. MulSen-AD unifies data from **RGB cameras, laser scanners, and lock-in infrared thermography**, effectively capturing external appearance, geometric deformations, and internal defects. The dataset spans 15 industrial products with diverse, real-world anomalies. We also present MulSen-AD Bench, a benchmark designed to evaluate multi-sensor methods, and propose MulSen-TripleAD, a decision-level fusion algorithm that integrates these three modalities for robust, unsupervised object anomaly detection. Our experiments demonstrate that multi-sensor fusion substantially outperforms single-sensor approaches, achieving 96.1\% AUROC in object-level detection accuracy. These results highlight the importance of integrating multi-sensor data for comprehensive industrial anomaly detection. 
 
@@ -167,8 +167,7 @@ For convenience, you can directly download our dataset along with the following 
 Due to space limit, detailed Single-3D-AD bench can refer to Tab8&Tab9 in our [[Supplementary](https://arxiv.org/abs/2412.14592)]
 ## 8 Single Image/Infrared Benchmark
 Refer to ## 7 Single 3D Benchmark and modify `./dataset_3D.py`**
-## 9 More Sensors
-More sensors like X-Ray and CT are on the road!
+
 ## Thanks
 
 Our code is built on [PatchCore](https://github.com/amazon-science/patchcore-inspection), [Real3D-AD](https://github.com/eliahuhorwitz/3D-ADS) and [M3DM](https://github.com/nomewang/M3DM), thanks for their excellent works!
